@@ -3,8 +3,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f9;
+  font-family: "Segoe UI", sans-serif;
+  /* background-color: #f4f4f9; */
+  background-image: url("https://cdn.pixabay.com/photo/2015/01/07/16/37/wood-591631_1280.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +23,8 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  border: 0px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
@@ -30,6 +35,12 @@ h2 {
   margin: 0;
 }
 
+.background-img{
+    background-image: url("https://images.pexels.com/photos/33067868/pexels-photo-33067868.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
 .chat-box {
   padding: 10px;
   height: 400px;
@@ -37,7 +48,6 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: #f9f9f9;
 }
 
 .message {
@@ -90,21 +100,33 @@ h2 {
   background-color: #357ab8;
 }
 
-
-#clearBtn{
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 16px;
-    margin: 10px auto;
-    cursor: pointer;
-    display: block;
-    font-weight: bold;
-    transition: background-color 0.3;
+#clearBtn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin: 10px auto;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  transition: background-color 0.3;
 }
 
 #clearBtn:hover {
   background-color: #cc0000;
 }
 
+
+
+#watermark {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  font-size: 14px;
+  color: #000; /* Change to white if your background is dark */
+  opacity: 0.9; /* Light and subtle */
+  pointer-events: none; /* So it doesn’t interfere with clicks */
+  user-select: none; /* So user can't select it */
+  font-family: 'Roboto', sans-serif; /* Optional */
+}
