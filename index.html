@@ -5,28 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChitChat - Friendly Chat App</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div class="chat-container">
-      <h2>💬 ChitChat</h2>
-      <div class="background-img">
-        <div id="chat-box" class="chat-box"></div>
-      <button id="clearBtn"><i class="fa-solid fa-trash"></i> Clear Chat</button>
+    <div class="main-container">
+      <div class="sidebar" id="userList">
+        <!-- User contacts will be listed here -->
       </div>
-      
-
-      <div class="input-area">
-        <input
-          type="text"
-          id="messageInput"
-          placeholder="Type your message..."
-        />
-        <button id="sendBtn">Send</button>
-
-        <div id="watermark">©piyush</div>
-
+      <div class="chat-section">
+        <h2 id="chatHeader">💬 ChitChat</h2>
+        <div class="background-img">
+          <div id="chat-box" class="chat-box"></div>
+          <button id="clearBtn">
+            <i class="fa-solid fa-trash"></i> Clear Chat
+          </button>
+        </div>
+        <div class="input-area">
+          <input
+            type="text"
+            id="messageInput"
+            placeholder="Type your message..."
+          />
+          <button id="sendBtn">Send</button>
+        </div>
       </div>
+      <div id="watermark">©piyush</div>
     </div>
 
     <script type="module">
